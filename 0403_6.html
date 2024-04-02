@@ -7,7 +7,7 @@
             display: none;
         }
 
-        .block_parent,.inline_parent {
+        .block_parent, .inline_parent, .inline-block_parent, .float_div, .float_div2 {
             background-color: green;
             padding: 10px;
             margin-top: 20px;
@@ -35,6 +35,25 @@
             width: 100px;
             height: 100px;
         }
+        
+        .float_div, .float_div2 {
+            float: left;
+            width: 100%; 
+            clear: both; 
+        }
+        .float_item {
+            background-color: lightpink;
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .inline-start {
+            float: inline-start; 
+        }
+        .inline-end {
+            float: inline-end; 
+        }
     </style>
 </head>
 <body>
@@ -47,9 +66,24 @@
       <div class="inline">인라인1</div>
       <div class="inline">인라인2</div>
     </div>
-    <div class="inline_parent">
+    <div class="inline-block_parent">
       <div class="inline-block">인라인블록1</div>
       <div class="inline-block">인라인블록2</div>
     </div>
+
+    <hr>
+
+    <div class="float_div">
+      <div class="float_item">none</div>
+      <div class="float_item">left</div>
+      <div class="float_item">right</div>
+      <div class="float_item">inherit</div>
+    </div>
+
+    <div class="float_div2">
+      <div class="float_item inline-start">Inline-start</div>
+      <div class="float_item inline-end">Inline-end</div>
+    </div>
+    <hr>
 </body>
 </html>
