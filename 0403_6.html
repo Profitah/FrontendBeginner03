@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .none {
+            display: none;
+        }
+
+        .block_parent,.inline_parent {
+            background-color: green;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        
+        .block {
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+        }
+    
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            margin: 5px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+        }
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            margin: 5px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="none">논</div>
+    <div class="block_parent">
+      <div class="block">블록1</div>  
+      <div class="block">블록2</div>  
+    </div>
+    <div class="inline_parent">
+      <div class="inline">인라인1</div>
+      <div class="inline">인라인2</div>
+    </div>
+    <div class="inline_parent">
+      <div class="inline-block">인라인블록1</div>
+      <div class="inline-block">인라인블록2</div>
+    </div>
+</body>
+</html>
