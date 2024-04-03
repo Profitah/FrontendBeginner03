@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>라디오 버튼과 체크 박스</title>
+</head>
+<body>
+  <form action="/User/form" method="post">
+    <label for="name" >이름:</label>
+    <input type="text" id="name" name="user_name" required><br><br>
+
+    
+    <label for="email">이메일:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="textarea">메시지:</label>
+    <textarea name="textarea" id="textarea" cols="50" rows="5" placeholder="텍스트를 입력해보세요."></textarea><br><br>
+    
+    <label for="my_favorite_color">선호하는 색상:</label>
+    <select name="select" id="my_favorite_color">
+      <option value="red">빨강</option>
+      <option value="blue">파랑</option>
+      <option value="yellow">노랑</option>
+    </select><br><br>
+    
+    <label>체크박스:</label><br>
+    <input type="checkbox" id="chkbox1" name="chkbox1">
+    <label for="chkbox1">항목 1</label><br>
+    <input type="checkbox" id="chkbox2" name="chkbox2">
+    <label for="chkbox2">항목 2</label><br>
+    <input type="checkbox" id="chkbox3" name="chkbox3">
+    <label for="chkbox3">항목 3</label><br><br>
+    
+    <label>라디오 버튼:</label><br>
+    <input type="radio" id="radio1" name="radio">
+    <label for="radio1">옵션 1</label><br>
+    <input type="radio" id="radio2" name="radio">
+    <label for="radio2">옵션 2</label><br>
+    <input type="radio" id="radio3" name="radio">
+    <label for="radio3">옵션 3</label><br><br>
+    
+    <button type="button">제출</button>
+    <input type="submit"></input> 
+  </form>
+  </form>
+
+  <hr>
+
+  <!--아래 요구사항을 충족하는 폼을 만들어보세요.
+
+1. 제출 버튼을 클릭하면 데이터가 /user로 제출되도록 설정하세요.
+
+2. 초기화 버튼을 클릭하면 폼의 입력된 모든 데이터가 초기화되도록 설정하세요.
+
+3. 클릭이 가능한 버튼을 하나 만드세요.(input type="button")
+
+4. 텍스트 필드를 만들어 사용자가 텍스트를 입력할 수 있도록 설정하세요.
+
+5. 암호 필드를 만들어 사용자가 비밀번호를 안전하게 입력할 수 있도록 설정하세요. 입력한 텍스트는 별표로 마스킹되어야 합니다.
+
+6. 숫자 입력만 가능한 필드를 만들어 사용자가 숫자를 입력할 수 있도록 설정하세요.
+
+7. 라디오 버튼을 만들어 선택지 중 단 하나의 항목만 선택할 수 있도록 설정하세요.
+
+8. 체크박스를 만들어 선택지 중 0개, 1개 또는 여러 개를 선택할 수 있도록 설정하세요.
+
+9. 사용자가 좋아하는 색상을 선택할 수 있는 드롭다운 목록을 추가하세요.
+-->
+
+<hr>
+</body>
+</html>

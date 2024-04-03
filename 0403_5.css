@@ -1,0 +1,40 @@
+html{
+    font-size: 20px; /* html 기본 폰트사이즈는 20px*/
+}
+div{
+    border : 1px solid black;
+}
+
+#container{
+    width: 100%;
+    background-color: yellow;
+}   
+
+#box{
+    width: 70vw; /* 화면에 보여지는 영역(뷰포트)에 비례*/
+    font-size: 2em; /*부모 : #container의 폰트사이즈를 곱한 값으로 계산*/
+    margin-left: 20px;
+    background-color: white
+}   
+
+#text{
+    font-size: 1.2em;
+}
+
+.item{
+    height: 20vh; /* 화면에 보여지는 영역(뷰포트)에 비례*/
+    font-size: 1.2rem; /*최상위 html요소의 font-size에 비례*/
+    width: 30px;
+}
+
+#item1{
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+
+#item2{
+   width: 10%; /*부모: #container에 비례해 크기 결정*/
+    color: blue;
+    font-weight: 700;
+}   
